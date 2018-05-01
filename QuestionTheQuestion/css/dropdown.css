@@ -1,0 +1,150 @@
+.dropdown-el {
+  width: 300px;
+  position: absolute;
+  display: inline-block;
+  min-height: 2em;
+  max-height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  color: #444;
+  outline: none;
+  border: .06em solid transparent;
+  border-radius: 1em;
+  background-color: #cde4f5;
+  transition: 0.3s all ease-in-out;
+}
+.dropdown-el input {
+  display: none;
+}
+.dropdown-el label {
+  border-top: .06em solid #d9d9d9;
+  display: block;
+  line-height: 1.4em;
+  padding-left: 1em;
+  padding-right: 3em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s color ease-in-out;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dropdown-el label:nth-child(2) {
+  margin-top: 2em;
+  border-top: .06em solid #d9d9d9;
+}
+.dropdown-el input:checked + label {
+  display: block;
+  border-top: none;
+  position: absolute;
+  top: 0;
+
+  white-space: nowrap;
+  width: 320px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dropdown-el input:checked + label:nth-child(2) {
+  margin-top: 0;
+  position: relative;
+}
+.dropdown-el::after {
+  content: "";
+  position: absolute;
+  right: 0.8em;
+  top: 0.9em;
+  border: 0.3em solid #3694d7;
+  border-color: #3694d7 transparent transparent transparent;
+  transition: .4s all ease-in-out;
+}
+.dropdown-el.expanded {
+  border: 0.06em solid #3694d7;
+  background: #fff;
+  border-radius: .25em;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
+  max-height: 20em;
+  z-index: 900;
+}
+.dropdown-el.expanded label {
+  border-top: .06em solid #d9d9d9;
+}
+.dropdown-el.expanded label:hover {
+  color: #3694d7;
+}
+.dropdown-el.expanded input:checked + label {
+  color: #3694d7;
+}
+.dropdown-el.expanded::after {
+  transform: rotate(-180deg);
+  top: .55em;
+}
+
+.dropdown-el-disable {
+    pointer-events: none;
+}
+
+
+/* Inverse */
+.dropdown-el-inverse.expanded input:checked + label {
+    bottom: 0px;
+    top: initial !important;
+    position: absolute !important;  
+}
+
+ .dropdown-el-inverse.expanded label:nth-child(2) {
+  margin-bottom: 0;
+  margin-top: 0;
+} 
+
+.dropdown-el-inverse label:last-child {
+  margin-bottom: 2em;
+  border-top: .06em solid #d9d9d9;
+}
+
+.dropdown-el-inverse.expanded input:checked + label:last-child {
+  margin-bottom: 0;
+  position: relative !important;
+}
+
+.dropdown-el-inverse {
+  /* bottom: 400px; */
+  top: initial;
+}
+
+.dropdown-el-inverse.expanded label {
+  border-bottom: .06em solid #d9d9d9;
+  border-top: 0;
+}
+
+.dropdown-el-inverse.expanded::after {
+  bottom: .85em;
+  top: initial;
+}
+
+.dropdown-el-inverse::after {
+  bottom: 0.5em;
+  top: initial;
+}
+
+
+
+
+
+/* Round module */
+.round-1-dropdown {
+    top: 320px;
+    left: 20px;
+}
+.round-2-dropdown {
+    top: 400px;
+    left: 20px;
+}
+.round-3-dropdown {
+    top: 480px;
+    left: 20px;
+}
+.round-4-dropdown {
+    bottom: 155px;
+    left: 20px;
+}

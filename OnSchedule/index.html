@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">    
+        <meta http-equiv="cleartype" content="on">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+		<title>On Schedule</title>
+
+
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="css/tooltip-drop-component.css" />
+		<link rel="stylesheet" type="text/css" href="css/popup.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body ontouchstart="">
+		<div class="container" style="-webkit-overflow-scrolling: touch;">
+
+			<div class="popup-alert-internet" id="popup-alert-internet-div">
+				<span class="pt-btn-close">
+					<img class="closeImage" src="images/buttons/prev.png"> </img>
+				</span>
+			</div>
+
+			<div class="congret-container" id="congret-container">
+				<span class="pt-btn-close">
+					<img class="closeImage" src="images/buttons/prev.png"> </img>
+				</span>
+			</div>
+			
+			<div id="pt-main" class="pt-perspective">
+				<div class="pt-page pt-page-gsk">
+					<span class="pt-btn-close">
+						<img class="closeImage" src="images/buttons/prev.png"> </img>
+					</span>
+
+					<span class="pt-btn-check">
+						<img class="img-check" src="images/buttons/check_inactive.png"> </img>
+					</span>
+
+					<span class="pt-btn-next">
+						<img class="img-next" src="images/buttons/next.png"> </img>
+					</span>
+
+					<span class="pt-btn-try">
+						<img class="img-try" src="images/buttons/try.png"> </img>
+					</span>
+
+					<div class="correct-container">
+						<div class="correct-label">CORRECT!</div>
+						<div class="correct-description">
+							You have assigned the appropriate vaccines to this immunization schedule. <br/>
+							Touch the Next Schedule button to continue.
+						</div>
+					</div>
+
+					<div class="incorrect-container">
+						<div class="incorrect-label">INCORRECT.</div>
+						<div class="incorrect-description">
+							Touch Try Again. <br/>
+							Review/reassign your responses and then touch Check Answer.
+						</div>
+					</div>
+
+					<div class='answer-container' id='answer-container'>
+
+					</div>
+
+				</div>
+			</div>
+
+			
+		</div>
+
+		<script src="js/jquery1.9.1/jquery.min.js"></script>
+		<script src="js/worklocal/wwid.js"></script>
+		<script src="../wwid.js"></script>
+		<script src="js/pagetransitions.js"></script> 
+		<script src="js/cbpTooltipMenu.js"></script>
+		<script src="js/onschedule_submitoffline.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
